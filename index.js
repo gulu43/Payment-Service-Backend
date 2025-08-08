@@ -56,7 +56,7 @@ app.post('/create-order', async (req, res) => {
   const options = {
     amount: Number(amount) * 100, // in paise
     currency: 'INR',
-    receipt: `donation_${name}_${Date.now()}`,
+    receipt: `do_${name}_${Date.now()}`,
   };
 
   try {
